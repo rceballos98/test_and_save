@@ -1,6 +1,9 @@
 # test_and_save
 General framework for machine learning projects in MATLAB that keeps track of past training parameters, accuracy scores and trained models for arbitrary trainers, automatically cataloging optimization routines and eliminating redundant training.
 
+## Requirements
+Tested on MATLAB 2014b and 2016a
+
 ## Basic Use
 The test and save function takes in a user defined training function that will be passed a user defined training parameters structure as input. It will then feed the resulting model together with the testing parameter structure to the user defined testing function. The example_script containes a concrete example of how to do this and the svm and cross validation wrapper (svmW and crossValW) are examples of the kind of wrapper functions the test_and_save framework will take in.
 
